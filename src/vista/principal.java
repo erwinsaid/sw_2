@@ -28,10 +28,13 @@ public class principal extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setText("Pagina principal");
+
+        jButton1.setText("jButton1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -39,7 +42,9 @@ public class principal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
-                .addComponent(jLabel1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton1)
+                    .addComponent(jLabel1))
                 .addContainerGap(296, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -47,7 +52,9 @@ public class principal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addContainerGap(275, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addContainerGap(234, Short.MAX_VALUE))
         );
 
         pack();
@@ -89,6 +96,7 @@ public class principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
